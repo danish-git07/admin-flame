@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #f5f6fa;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #181a22;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    width: 270px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo img {
+    width: 150px;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    width: 100%;
+}
+
+.sidebar .menu a {
+    display: flex;
+    align-items: center;
+    color: #8e94a9;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 15px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu a.active {
+    background-color: #252836;
+    color: white;
+    padding-left: 20px;
+}
+
+.sidebar .menu a .menu-icon {
+    font-size: 18px;
+    color: #00ff00;
+    margin-right: 12px;
+}
+
+.sidebar .menu .logout {
+    color: #ff4d4d;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 40px;
+    width: calc(100% - 270px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Card */
+.profile-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+.profile-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Profile Image */
+.profile-img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 30px; /* Added top margin */
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ddd;
+    object-fit: cover;
+}
+
+/* Profile Details */
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #222;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Info Sections */
+.info-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info-section h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+}
+
+.info-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Gallery */
+.profile-img-container2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-img2 {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Video Section */
+.video-section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: #007bff;
+    border: none;
+    color: white;
+}
+
+.btn-danger {
+    background: #dc3545;
+    border: none;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 230px;
+    }
+
+    .main-content {
+        margin-left: 230px;
+        padding: 20px;
+    }
+
+    .profile-card {
+        width: 90%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

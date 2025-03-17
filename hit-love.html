@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Approval Dashboard</title>
+    <link rel="stylesheet" href="hit-love.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="col-md-5 sidebar">
+            <div class="logo">
+                <img src="logo-flame.svg" class="logo-flame" alt="logo">
+                <!-- <h2><span class="company-name">MY</span>COMPANY</h2>
+                <p>freeLogo.me</p> -->
+            </div>
+            <ul class="menu">
+                <li><a href="#"><span class="mdi mdi-cube menu-icon"></span>Users by Role</a></li>
+                <li><a href="#" class="active"><span class="mdi mdi-cube menu-icon"></span> Packages</a></li>
+                <li><a href="#"><span class="mdi mdi-cube menu-icon"></span> Things you hate/love</a></li>
+                <li><a href="#"><span class="mdi mdi-cube menu-icon"></span> Bank and Currency</a></li>
+                <li><a href="#" class="logout"><span class="mdi mdi-logout menu-icon"></span> Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="buttons">
+                <button class="download"><i class="mdi mdi-download"></i> Download CSV</button>
+                <button class="approve"><i class="mdi mdi-checkbox-marked-circle"></i> Bulk Approve</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Active/Inactive</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>111@gmail.com</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                            Inactive
+                        </td>
+                        <td><button class="btn-approve"><i class="mdi mdi-check-circle"></i> Approve</button></td>
+                        <td><button class="btn-view">View</button></td>
+                        <td><button class="btn-user-data">View User Data</button></td>
+                    </tr>
+                    <tr>
+                        <td>222@gmail.com</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                            Inactive
+                        </td>
+                        <td><button class="btn-approve"><i class="mdi mdi-check-circle"></i> Approve</button></td>
+                        <td><button class="btn-view">View</button></td>
+                        <td><button class="btn-user-data">View User Data</button></td>
+                    </tr>
+                    <tr>
+                        <td>333@gmail.com</td>
+                        <td>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                            Inactive
+                        </td>
+                        <td><button class="btn-approve"><i class="mdi mdi-check-circle"></i> Approve</button></td>
+                        <td><button class="btn-view">View</button></td>
+                        <td><button class="btn-user-data">View User Data</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

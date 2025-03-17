@@ -1,0 +1,464 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f6fa;
+    overflow: hidden; /* Scroll remove */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #181a22;
+    color: #fff;
+    padding: 20px 0;
+    height: 100vh;
+    overflow-y: auto;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo h2 {
+    font-size: 18px;
+}
+
+.sidebar .logo .company-name {
+    font-weight: bold;
+    color: #c4c4c4;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    width: 100%;
+}
+
+.sidebar .menu a {
+    display: flex;
+    align-items: center;
+    color: #8e94a9;
+    text-decoration: none;
+    font-size: 0.937rem;
+    padding: 12px 15px;
+    width: 100%;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu a.active {
+    background-color: #161621;
+    color: white;
+}
+
+.sidebar .menu a .menu-icon {
+    font-size: 20px;
+    color: #00ff00;
+    margin-right: 12px;
+}
+
+.sidebar .menu .logout {
+    color: #00ff00;
+}
+
+/* Logo */
+.logo-flame {
+    width: calc(258px - 120px);
+    max-width: 100%;
+    height: 28px;
+    margin: auto;
+    vertical-align: middle;
+}
+
+/* Form Container */
+.form-container {
+    margin: 30px;
+    width: 400px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    /* position: relative; */
+    left: 270px; /* Sidebar ke baad space dene ke liye */
+}
+
+/* Form Elements */
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Radio Group */
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+/* Submit Button */
+.btn {
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #218838;
+}
+/* Sidebar Styles */
+.sidebar {
+    background-color: #181a22;
+    color: #fff;
+    padding: 20px 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo h2 {
+    font-size: 18px;
+}
+
+.sidebar .logo .company-name {
+    font-weight: bold;
+    color: #c4c4c4;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    width: 100%;
+}
+
+.sidebar .menu a {
+    display: flex;
+    align-items: center;
+    color: #8e94a9;
+    text-decoration: none;
+    font-size: 0.937rem;
+    padding: 12px 15px;
+    width: 100%;
+}
+
+.sidebar .menu a:hover,
+.sidebar .menu a.active {
+    background-color: #161621;
+    color: white;
+    width: 100%;
+}
+
+.sidebar .menu a .menu-icon {
+    font-size: 20px;
+    color: #00ff00;
+    margin-right: 12px;
+}
+
+.sidebar .menu .logout {
+    color: #00ff00;
+}
+
+/* Table Container */
+.table-container {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Edit Button */
+.btn-edit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+/* Add Package Button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.logo-flame{
+    width: calc(258px - 120px);
+    max-width: 100%;
+    height: 28px;
+    margin: auto;
+    vertical-align: middle;
+}
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 70%;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
+/* Title */
+.title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Tabs */
+.tabs {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ddd;
+    color: #333;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2e86de;
+    color: white;
+}
+
+.btn.active {
+    background: #27ae60;
+    color: white;
+}
+
+/* Table Section */
+.table-container {
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* Add Button */
+.add-btn {
+    background: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #218838;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #333;
+}
+
+th, td {
+    border-bottom: 2px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #f1f1f1;
+}
+
+/* Status */
+.status {
+    font-weight: bold;
+}
+
+.status.active {
+    color: #27ae60;
+}
+
+/* Edit Button */
+.edit-btn {
+    background: #227be0;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.edit-btn:hover {
+    /* background: #e67e22; */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group label span {
+    color: red;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.5);
+}
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+.btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #388E3C;
+    transform: scale(1.05);
+}
